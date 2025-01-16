@@ -53,7 +53,7 @@ async function deleteEvent(id) {
         "Content-Type": "application/json",
       },
     });
-    if (!response.ok) {
+    if (!responsem.ok) {
       throw new Error(
         "Unable to delete event due to Http error: " + response.status
       );
