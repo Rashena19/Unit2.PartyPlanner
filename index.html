@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>events</title>
-    <link rel="stylesheet" href="index.css" />
-    <script defer src="index.js"></script>
-  </head>
-  <body>
-    <h1>Event</h1>
-    <form id="addArtist">
-      <label>
-        Event Name
-        <input type="text" name="eventName" />
-      </label>
-      <label>
-        Description
-        <input type="text" name="description" />
-      </label>
-      <label>
-        Date
-        <input type="datetime-local" name="date" />
-      </label>
-      <button type="submit" id="add-event">Add Event</button>
-    </form>
-    <ul id="events"></ul>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Party Planner</title>
+  <link rel="stylesheet" href="index.css" />
+  <script defer src="index.js"></script>
+</head>
+
+<body>
+  <h1>Party Planner</h1>
+  <form id="partyPlanner">
+    <label>
+      Event Name
+      <input type="text" name="eventName" id="eventName" />
+    </label>
+    <label>
+      Location
+      <input type="text" name="location" id="location" />
+    </label>
+    <label>
+      Discription
+      <input type="text" name="discription" id="discription" />
+    </label>
+    <label>
+      Date
+      <input type="datetime-local" name="date" id="eventDate" />
+    </label>
+    <button type="submit" id="add-event">Add Event</button>
+  </form>
+  <ul id="events"></ul>
+</body>
+
 </html>
