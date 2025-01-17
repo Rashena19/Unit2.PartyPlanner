@@ -53,7 +53,7 @@ async function deleteEvent(id) {
         "Content-Type": "application/json",
       },
     });
-    if (!responsem.ok) {
+    if (!response.ok) {
       throw new Error(
         "Unable to delete event due to Http error: " + response.status
       );
@@ -119,7 +119,7 @@ function renderEvent() {
     deleteButton.style.display = "block";
     deleteButton.addEventListener("click", async () => {
       console.log("Delete button clicked!");
-      await deleteEvent(event);
+      await deleteEvent(event.id);
     })
     card.append(h1, h2, eventDate, deleteButton)
     return card
